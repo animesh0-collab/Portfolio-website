@@ -1,12 +1,56 @@
-body{
-    background-color: antiquewhite;
-}
-h1{
-    color: darkblue;
-    text-align: center;
-}
-h2{
-    font-size: 50px;
-    text-align: center;
+/* 1. Global Setup & Smooth Scrolling */
+html {
+    /* This single line creates the gliding effect when you click a nav link */
+    scroll-behavior: smooth; 
 }
 
+body {
+    /* The light beige background from your reference image */
+    background-color: #f6ead6; 
+    font-family: system-ui, sans-serif;
+    /* Removes default browser spacing at the edges of the page */
+    margin: 0; 
+    color: #1a1a1a;
+}
+
+/* 2. Main Container */
+.container {
+    /* Prevents the website from stretching too wide on laptops/monitors */
+    max-width: 800px; 
+    /* The 'auto' on the left and right automatically centers the container */
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* 3. Dark Navigation Bar */
+.navbar {
+    background-color: #1a202c; /* Dark blue/black color */
+    padding: 15px 0;
+    /* Sticky keeps the navbar locked to the top of the screen as you scroll down */
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    /* Flexbox lines up the list items horizontally */
+    display: flex; 
+    /* Centers the links in the middle of the bar */
+    justify-content: center; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    /* Adds exactly 30px of space between each link */
+    gap: 30px; 
+}
+
+.navbar a {
+    color: white;
+    /* Removes the default blue underline from links */
+    text-decoration: none; 
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #a0aec0; /* Slightly dims the link when you hover over it with a mouse */
+}
