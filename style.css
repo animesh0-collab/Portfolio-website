@@ -67,7 +67,7 @@ body {
     height: 100px;
 }
 .card {
-    background-color: hsl(34, 78%, 91%);
+    background-color: hsl(30, 59%, 57%);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -75,6 +75,29 @@ body {
 }
 .projects-grid {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    list-style-type: none;
+    gap: 80px;
+    align-items: center;
+    padding: 0;
+}
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    /* gap: 90px; */
+}
+.contact-logo-email-icon {
+    width: 80px;
+    height: 80px;
+    
+}
+footer{
+    text-align: center;
+    text-decoration: underline;
 }
