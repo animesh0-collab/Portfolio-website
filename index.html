@@ -13,44 +13,67 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contactme">Contact Me</a></li>
         </ul>
     </nav>
-    <header class="hero-section">
-        <div class = "hero-text">
-            <h1>Welcome to my portfolio</h1>
-            <h2>Animesh</h2>
-            <p>Aspiring learner</p>
-        </div>
-        <img src="" alt="">
-    </header>
+    <!-- .container class has two specific rules: max-width: 800px and margin: 0 auto -->
+    <main class="container">
+        <h1>Welcome to my portfolio</h1>
+        <header class="hero-section">
+            <div class="hero-text">
 
-    <hr>
-    <section id="about" class="card">
-        <h3>About Me</h3>
-        <p>Hello,I am currently at my foundational level of my IITM BS journey.I am also starting my frontend journey by
-            learning
-            HTML and CSS</p>
-    </section>
-    <section id="skills" class="card">
-        <h4>Skills</h4>
-        <ul>
-            <li>HTML5(Learning)</li>
-            <li>CSS(Learning)</li>
-            <li>Basic Problem Solving</li>
-            <li>Python</li>
-        </ul>
-    </section>
-    <hr>
-    <section id="contactme" class="card">
-        <h5>Contact Me</h5>
-        <ol>
-            <li> <a target="_blank" href="mailto:dasanimesh2008@gmail.com">Email</a></li>
-            <li> <a target="_blank" href="https://github.com/animesh0-collab">GitHub</a></li>
-            <li> <a target="_blank"
-                    href="https://www.linkedin.com/in/animesh-das-3410b12b7/?isSelfProfile=true">LinkedIn</a></li>
-        </ol>
-    </section>
+                <h2>Animesh</h2>
+                <p>Aspiring learner</p>
+            </div>
+            <img src="images/profile.png" alt="Animesh" class="profile-image">
+        </header>
+
+
+        <section id="about" class="card">
+            <h3>About Me</h3>
+            <p>Hello,I am currently at my foundational level of my IITM BS journey.I am also starting my frontend
+                journey by
+                learning
+                HTML and CSS</p>
+        </section>
+        <section id="skills" class="card">
+            <h4>Skills</h4>
+            <ul>
+                <li>HTML5(Learning)</li>
+                <li>CSS(Learning)</li>
+                <li>Basic Problem Solving</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="projects" class="card">
+            <h3>Projects</h3>
+            <!-- this div acts as the main container holding the other 2 boxes -->
+            <div class="projects-grid">
+                <!-- project box 1 -->
+                <div class="card inner-card">
+
+                    <h4>Project 1: Portfolio Website</h4>
+                    <p>A simple portfolio website built with HTML and CSS.</p>
+                </div>
+                <!-- project box 2 -->
+                <div class="card inner-card">
+                    <h4>Project 2: Tip Calculator</h4>
+                    <p>A simple tip calculator built with Python.</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="contactme" class="card">
+            <h5>Contact Me</h5>
+            <ol>
+                <li> <a target="_blank" href="mailto:dasanimesh2008@gmail.com">Email</a></li>
+                <li> <a target="_blank" href="https://github.com/animesh0-collab">GitHub</a></li>
+                <li> <a target="_blank"
+                        href="https://www.linkedin.com/in/animesh-das-3410b12b7/?isSelfProfile=true">LinkedIn</a></li>
+            </ol>
+        </section>
+    </main>
     <footer>
         <p>© 2024 Portfolio website. All rights reserved.</p>
     </footer>

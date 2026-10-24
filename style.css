@@ -1,56 +1,80 @@
-/* 1. Global Setup & Smooth Scrolling */
 html {
-    /* This single line creates the gliding effect when you click a nav link */
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
-    /* The light beige background from your reference image */
-    background-color: #f6ead6; 
-    font-family: system-ui, sans-serif;
-    /* Removes default browser spacing at the edges of the page */
-    margin: 0; 
-    color: #1a1a1a;
+    background-color: antiquewhite;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* 2. Main Container */
 .container {
-    /* Prevents the website from stretching too wide on laptops/monitors */
-    max-width: 800px; 
-    /* The 'auto' on the left and right automatically centers the container */
-    margin: 0 auto; 
+    max-width: 800px;
+    /* Stops the website from getting too wide on laptops */
+    margin: 0 auto;
+    /* The 'auto' automatically centers this 800px box on the screen */
     padding: 20px;
+    /* ensures that your text and white cards never smash against the absolute edges of the screen. */
 }
 
-/* 3. Dark Navigation Bar */
 .navbar {
-    background-color: #1a202c; /* Dark blue/black color */
-    padding: 15px 0;
-    /* Sticky keeps the navbar locked to the top of the screen as you scroll down */
-    position: sticky; 
+    background-color: rgb(79, 79, 219);
+    position: sticky;
     top: 0;
-    z-index: 100;
+    /* Locks the navbar to the top of the screen */
+    padding: 10px 0;
 }
 
 .navbar ul {
-    /* Flexbox lines up the list items horizontally */
-    display: flex; 
-    /* Centers the links in the middle of the bar */
-    justify-content: center; 
-    list-style-type: none; 
-    margin: 0;
+    display: flex;
+    /* Lines up the list items horizontally */
+    justify-content: center;
+    /* Centers the links */
+    list-style-type: none;
+    /* Removes the bullet points */
+    gap: 40px;
+    /* Adds space between each link */
+    margin: 10px;
     padding: 0;
-    /* Adds exactly 30px of space between each link */
-    gap: 30px; 
 }
 
 .navbar a {
+    text-decoration: none;
+    /* Removes the blue underline from links */
     color: white;
-    /* Removes the default blue underline from links */
-    text-decoration: none; 
-    font-weight: 500;
+    font-weight: bold;
 }
 
-.navbar a:hover {
-    color: #a0aec0; /* Slightly dims the link when you hover over it with a mouse */
+.hero-section {
+    display: flex;
+    /*considers the all the things inside div as a container and img as another container and puts tihem side by side*/
+    align-items: center; /* Vertically aligns them in the middle */
+    gap: 300px; /* Adds space between the text and image */
+    justify-content: flex-start; /* Pushes text left and image right */
+    margin: 40px 0;
+}
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 150px; /* Cuts your square image into a perfect circle */
+    object-fit: scale-down; /* Prevents the image from looking squished */
+    border: 3px solid #1a202c; /* Adds a border around the image */
+
+}
+.hero-text h1 {
+    max-width: 500px;
+    /* Prevents the text from stretching too far across the screen */
+    height: 100px;
+}
+.card {
+    background-color: hsl(34, 78%, 91%);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(79, 66, 66, 0.05);   
+}
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
