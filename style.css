@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: antiquewhite;
+    background-color:#F3E5D8;
     margin: 0%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(79, 79, 219);
+    background-color: #171A21;
     position: sticky;
     top: 0;
     /* Locks the navbar to the top of the screen */
@@ -67,7 +67,7 @@ body {
     height: 100px;
 }
 .card {
-    background-color: hsl(30, 59%, 57%);
+    background-color: #FFFFFF;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -100,4 +100,27 @@ body {
 footer{
     text-align: center;
     text-decoration: underline;
+}
+/* Adding a background box to the top Welcome section */
+header {
+    background-color: #FFFFFF; /* A lighter cream shade for the box */
+    padding: 30px; /* Gives breathing room inside the box */
+    border-radius: 12px; /* Rounds the corners */
+    margin-bottom: 25px; /* Adds space before the "About Me" section below it */
+}
+.skills-grid {
+    display: grid; /*tells the browser to stop stacking your list items in a single vertical line and instead let you organize them into columns and rows.*/
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;  /*This splits your grid into two equal columns. 1fr stands for "1 fraction" of the available space. */
+    gap: 40px; /* Adds space between the grid items */
+}
+.skills-grid li {
+   display: flex; /* Allows you to align the icon and text side by side */
+   align-items: center; /* Vertically centers the icon and text */
+}
+.skill-logo{
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Prevents the image from looking squished */
+    
 }
