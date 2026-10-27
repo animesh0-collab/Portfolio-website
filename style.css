@@ -117,6 +117,7 @@ header {
 .skills-grid li {
    display: flex; /* Allows you to align the icon and text side by side */
    align-items: center; /* Vertically centers the icon and text */
+   gap : 15px; /* Adds space between the icon and text */
 }
 .skill-logo{
     width: 50px;
